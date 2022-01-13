@@ -1,0 +1,158 @@
+:root {
+	/* Colors */
+	--color-primary: black;
+	--color-secondary: #5a9794;
+	--color-tertiary: #A68DAD;
+	--color-quaternary: #FC9918;
+	--just-white: #FFF;
+	--soft-white: #FAF8F7;
+	--just-grey: #C7C7C7;
+	--warm-black: #282623;
+	/* Fonts */
+	--title-h1: 4rem;
+	--title-h2: 2.5rem;
+	--title-h3: 2rem;
+	--title-h4: 1.6rem;
+	--title-h5: 1.3rem;
+	--paragraphs: 1rem;
+}
+
+*{
+	font-family: 'Open Sans', sans-serif;
+	scroll-behavior: smooth;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	overflow-x: hidden;
+}
+main{
+    background-color: var(--color-primary);
+    padding: 50px 0 200px;
+}
+.main-titulo-principal{
+    font-size: var(--title-h1);
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--color-quaternary);
+}
+.main-contador{
+    position: relative;
+    background-image: url("./contador.jpg");
+    background-size: cover;
+    background-position: 100% 10%;
+    width: 100vw;
+    height: 15vw;
+    z-index: 30;
+}
+.main-cont-principal{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+    background-color: var(--color-tertiary);
+}
+.cont-actividades{
+    width: 100vw;
+    height: 40vh;
+    overflow-x: auto;
+    color: var(--warm-black);
+    background-color: var(--color-primary);
+}
+.accordion-item{
+    border:0;
+}
+.accordion-button::after{
+    margin-left: .6rem;
+    width: .8rem;
+    height: .8rem;
+    background-size: 100%;
+}
+.cont-info{
+    position: relative;
+    width: 100vw;
+    height: 117vh;
+    padding: 1rem 4rem;
+    background-color: var(--color-primary);
+    border-bottom: 2px solid black;
+    z-index: 10;
+}
+.boda-civil{
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: linear-gradient(to right, var(--just-grey) 60%, var(--color-primary));
+    outline: 2px solid var(--color-primary);
+}
+.boda-religiosa{
+    width: 100%;
+    height: 29vh;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: linear-gradient(to right, var(--just-grey) 60%, var(--color-primary));
+    outline: 2px solid var(--color-primary);
+}
+.evento{ 
+    width: 100%;
+    height: 29vh;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: linear-gradient(to right, var(--just-grey) 60%, var(--color-primary));
+    outline: 2px solid var(--color-primary);
+}
+.presupuesto{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 12vh;
+    bottom: 2vw;
+    left: 39vw;
+    border-radius: 30px;
+    color: var(--just-white);
+    background-color: var(--warm-black);
+}
+.presupuesto h5{
+    font-size: var(--title-h4);
+    font-weight: bold;
+}
+h5{
+    margin: 0;
+}
+.info-titulo{
+    text-align: center;
+    font-size: var(--title-h4);
+}
+.cont-pendientes{
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    overflow-x: auto;
+    background-color: var(--color-primary);
+    color: var(--just-white);
+    z-index: 30;
+}
+.accordion-body{
+    height: auto;
+    padding: .5rem .5rem 0;
+    color: var(--just-white);
+    background-color: black;
+}
+.accordion-button{
+    border-bottom: 2px solid black;
+}
+.accordion-button:focus{
+    outline: 1px solid black;
+    border-color: black;
+    box-shadow:none;
+}
+.accordion-body li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0 0 0 1rem;
+}

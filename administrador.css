@@ -1,0 +1,226 @@
+:root {
+	/* Colors */
+	--color-primary: black;
+	--color-secondary: #5a9794;
+	--color-tertiary: #A68DAD;
+	--color-quaternary: #FC9918;
+	--just-white: #FFF;
+	--soft-white: #FAF8F7;
+	--just-grey: #C7C7C7;
+	--warm-black: #282623;
+	/* Fonts */
+	--title-h1: 4rem;
+	--title-h2: 2.5rem;
+	--title-h3: 2rem;
+	--title-h4: 1.6rem;
+	--title-h5: 1.3rem;
+	--paragraphs: 1rem;
+}
+
+*{
+	font-family: 'Open Sans', sans-serif;
+	scroll-behavior: smooth;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	overflow-x: hidden;
+}
+main{
+    background-color: black;
+    padding-bottom: 200px;
+}
+.main-titulo{
+    width: 100vw;
+    height: 15vw;
+    background-color: var(--color-quaternary);
+    padding: 1% 0 .5%;
+}
+.titulo-main{
+    background-image: url(./cinta-titulo.png);
+    background-size: 100% 100%;
+    width: 30%;
+    height: 100%;
+    margin: auto;
+}
+.main-dashboard{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 20vw;
+    background-color:var(--warm-black);
+}
+.main-dashboard div{
+    width: 18%;
+    height: 70%;
+    background-color: blanchedalmond;
+    align-self: center;
+}
+
+.main-cont{
+    display: flex;
+}
+.main-botones{
+    display: inline-block;
+    width: 20vw;
+    height: 35vw;
+    position: sticky;
+    top:10rem;
+    padding: 4rem .8rem 1rem;
+}
+.botones-input{
+    border-radius: 8px;
+    border:0px solid black;
+    padding:.3rem .8rem;
+    width: 100%;
+}
+.botones-a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--just-white);
+    height: 4rem;
+}
+.botones-a span{
+    display: inline-block;
+    background-color: var(--warm-black);
+    width: 10rem;
+    padding:2px 0;
+    border-radius: 15px;
+}
+.main-cont form{
+    padding-top: 3rem;
+}
+.input-enlace{
+    display: block;
+    text-align: end;
+    height: 5%;
+    padding-top:1.5rem;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.input-enlace span{
+    background-color: var(--just-grey);
+    padding:.4rem 1rem;
+    border-radius: 5px;
+
+}
+
+.main-lista{
+    display: inline-block;
+    width: 80vw;
+    padding:2rem 1rem;
+    margin: 0;
+}
+
+
+.fondo_transparente{
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    z-index: 10;
+}
+.modal{
+    background: linear-gradient(0deg,black 90%, var(--color-quaternary) 5%);
+    width: 60%;
+    height: auto;
+    top: 0;
+    left: 20%;
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+
+}
+.modal_cerrar{
+    background: var(--warm-black);
+    position: absolute;
+    right: 1rem;
+    color: var(--just-white);
+    top: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.modal_titulo{
+    color: black;
+    font-size: 40px;
+}
+.modal_mensaje{            
+   padding: 2rem 2rem;
+   display: inline-block;
+   width: 100%;
+}
+.modal_botones{    
+    display: flex;  
+    width: 100%;    
+    background: var(--color-quaternary);
+    padding: 10px;
+    justify-content: space-evenly;
+}
+.modal-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 16vh;
+}
+.modal-nombre{
+    width: 60%;
+}
+.modal-select{
+    width: 39%;
+}
+.modal-cont-dos{
+    margin-bottom: .5rem;
+}
+.modal-cont-tres{
+    height: auto;
+}
+.modal-input{
+    width: 32%;
+}
+.boton{
+    background: var(--warm-black);
+    padding: 8px 30px;
+    color: var(--color-secondary);
+    text-decoration: none;
+    border-radius: 25px;
+    border:1px solid var(--color-secondary);
+}
+.boton:hover{
+    background:black;
+    color: var(--just-white);
+    outline:2px solid var(--just-white);
+}
+.mb-3{
+    display: inline-block;
+    text-align: center;
+}
+.mb-3 label{
+    color: var(--just-white);
+}
+.modal-tex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.modal-textarea{
+    width: 80%;
+    border-radius: 5px;
+    max-height: 10rem;
+    font-size: var(--paragraphs);
+    padding:.7rem 1rem;
+}
